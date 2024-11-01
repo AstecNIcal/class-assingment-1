@@ -1,24 +1,35 @@
+import Link from 'next/link'
+import React from 'react'
+import Header from './Header'
 
 
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+const Hero=()=>{
 
-const Hero =()=>{
+    return(
 
-return (
-    <div   >
+<div>
+<h2  >Hero-section
+</h2><p>This is very important section</p>
+<ul>
+
+<Link href="/">Home</Link>
+<Link href="/about">About</Link>
 
 
+</ul>
 
- 
 </div>
 
 
-
-);
-
+    )
 }
-  
-export default Hero
+export default Header
+
+
+
+
+
+
+
+

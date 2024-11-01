@@ -1,44 +1,43 @@
+import React from 'react'
+import Link from 'next/link'
+const About=()=>{
+
+    return(
+
+<div>
+    <h1 className='bg-gray-300 border-spacing-3 border rounded-lg'
+     >About</h1>
+<button className="p-3 bg-red-500 m-1 border-black-400 border-spaing-4 rounded-md">Home</button>
+     
+<button className="p-3 bg-green-500 m-1 border-black-400 border-spaing-4 rounded-md">Aboutpage</button>
 
 
-import React from "react";
-import Link from "next/link";
-
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import Image from "next/image";
-import Image1 from './../../public/image1.webp'
-
-export default function Homepage(){
-return(
-
-
- <div >
 <ul>
-    
- <Navbar/>
-<Footer/>
-<Hero/>
+
+<Link href="/">Home </Link>
+<br />
+<Link href="/about"> See About link </Link>
+<br />
+
+
 </ul>
-<h1> 
-<img className ="w-90 , h-60 rounded-3xl relative " src="image1/landscape.jpg" alt="landscape" />
-Landscape painting
-</h1>
-<br />
-
-
-<h1>
-<img className ="w-90 , h-60 rounded-full relative " src="image1/nature.jpg" alt="nature" /> Natural painting
-</h1>
-
-<br />
-
-<h1>
-<img className ="w-100 , h-65 rounded-full relative " src="image1/Nature.png" alt="Nature" />
-
- Peace of Nature
-</h1>
 </div>
-);
+
+    );
 
 }
+export default About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
